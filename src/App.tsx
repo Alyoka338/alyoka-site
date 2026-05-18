@@ -744,6 +744,30 @@ function ContactForm() {
   const [name, setName] = useState("");
   const [telegram, setTelegram] = useState("");
   const [phone, setPhone] = useState("");
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const form = e.target as HTMLFormElement;
+
+  try {
+    const response = await fetch("https://formsubmit.co/ajax/alyoka.art@ya.ru", {
+      method: "POST",
+      body: new FormData(form),
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      alert("Заявка успешно отправлена!");
+      form.reset();
+    } else {
+      alert("Ошибка при отправке.");
+    }
+  } catch (error) {
+    alert("Ошибка сети.");
+  }
+};
   return (
     <section id="contact" className="relative py-32 border-t border-white/5">
       <div className="mx-auto max-w-7xl px-5 grid grid-cols-1 lg:grid-cols-2 gap-12">
