@@ -813,10 +813,11 @@ function ContactForm() {
 
         <div className="reveal">
           <form
-              action="https://formsubmit.co/alyoka.art@ya.ru"
+  onSubmit={handleSubmit}
+  action="https://formsubmit.co/alyoka.art@ya.ru"
   method="POST"
   className="glass-strong rounded-2xl p-7 md:p-9 glow-border space-y-7"
-          >
+>
             {sent ? (
               <div className="text-center py-12">
                 <div className="mx-auto h-16 w-16 rounded-full bg-gradient-to-br from-[#4d7cff] to-[#8b5cff] flex items-center justify-center mb-5">
