@@ -764,6 +764,28 @@ function ContactForm() {
     } else {
       alert("Ошибка при отправке.");
     }
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const form = e.target as HTMLFormElement;
+
+  const data = new FormData(form);
+
+  try {
+    const response = await fetch("https://formsubmit.co/ajax/alyoka.art@ya.ru", {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      alert("Заявка отправлена!");
+      form.reset();
+    } else {
+      alert("Ошибка отправки.");
+    }
   } catch (error) {
     alert("Ошибка сети.");
   }
