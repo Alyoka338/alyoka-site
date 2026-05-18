@@ -744,44 +744,6 @@ function ContactForm() {
   const [name, setName] = useState("");
   const [telegram, setTelegram] = useState("");
   const [phone, setPhone] = useState("");
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (loading) return;
-    setLoading(true);
-
-    try {
-      const response = await fetch("https://formsubmit.co/ajax/alyoka.art@ya.ru", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify({
-          "Имя": name,
-          "Telegram": telegram,
-          "Номер телефона": phone,
-          "Тип проекта": projectType,
-          "_subject": `Новая заявка: ${projectType} от ${name}`
-        })
-      });
-
-      if (response.ok) {
-        setSent(true);
-        setName("");
-        setTelegram("");
-        setPhone("");
-      } else {
-        alert("Произошла ошибка при отправке. Пожалуйста, свяжитесь с нами напрямую через Telegram или Email.");
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      alert("Ошибка сети. Пожалуйста, свяжитесь с нами напрямую через Telegram или Email.");
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
     <section id="contact" className="relative py-32 border-t border-white/5">
       <div className="mx-auto max-w-7xl px-5 grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -827,8 +789,9 @@ function ContactForm() {
 
         <div className="reveal">
           <form
-            onSubmit={handleSubmit}
-            className="glass-strong rounded-2xl p-7 md:p-9 glow-border space-y-7"
+              action="https://formsubmit.co/alyoka.art@ya.ru"
+  method="POST"
+  className="glass-strong rounded-2xl p-7 md:p-9 glow-border space-y-7"
           >
             {sent ? (
               <div className="text-center py-12">
@@ -896,10 +859,9 @@ function ContactForm() {
 
                 <button 
                   type="submit" 
-                  disabled={loading}
                   className="btn-primary w-full !py-4 mt-2 disabled:opacity-65 disabled:cursor-not-allowed"
                 >
-                  {loading ? "Отправка..." : "Заказать бесплатный прототип"}
+                  Заказать бесплатный прототип
                 </button>
                 <p className="text-xs text-white/40 text-center">
                   Нажимая кнопку, вы соглашаетесь с <span className="text-white/60">политикой конфиденциальности</span>
