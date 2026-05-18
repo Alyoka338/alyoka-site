@@ -834,8 +834,7 @@ function ContactForm() {
         </div>
 
         <div className="reveal">
-          <form
-  onSubmit={handleSubmit}
+ <form
   action="https://formsubmit.co/alyoka.art@ya.ru"
   method="POST"
   className="glass-strong rounded-2xl p-7 md:p-9 glow-border space-y-7"
