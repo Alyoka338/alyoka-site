@@ -228,7 +228,7 @@ function HeroDashboard() {
               ))}
             </div>
 
-            <div className="grid grid-cols-3 gap-2 text-xs">
+            <div className="grid md:grid-cols-3 gap-2 text-xs">
               {[
                 ["UX-подход", "Минималистичный стиль"],
                 ["Визуальное направление", "Визуальная атмосфера"],
@@ -535,15 +535,15 @@ function ProcessVis() {
               <div className="text-[11px] uppercase tracking-widest text-white/40">Motion-система</div>
               <span className="text-[10px] font-mono text-[#8b5cff]">studio — noir</span>
             </div>
-            <div className="grid grid-cols-2 gap-3 mb-4">
+            <div className="grid md:grid-cols-2 gap-3 mb-4">
               <div className="rounded-xl bg-gradient-to-br from-[#4d7cff]/15 to-transparent border border-white/5 p-4">
                 <div className="text-[11px] text-white/40 uppercase tracking-wider">Визуальный ритм</div>
-                <div className="font-display text-2xl font-semibold mt-1 leading-tight">Редакционный</div>
+                <div className="font-display text-lg md:text-2xl font-semibold mt-1 leading-tight break-words">Редакционный</div>
                 <div className="text-[10px] text-[#66e6ff] mt-1 font-mono">— баланс</div>
               </div>
               <div className="rounded-xl bg-gradient-to-br from-[#8b5cff]/15 to-transparent border border-white/5 p-4">
                 <div className="text-[11px] text-white/40 uppercase tracking-wider">Глубина интерфейса</div>
-                <div className="font-display text-2xl font-semibold mt-1 leading-tight">Многослойность</div>
+                <div className="font-display text-lg md:text-2xl font-semibold mt-1 leading-tight break-words">Многослойность</div>
                 <div className="text-[10px] text-[#66e6ff] mt-1 font-mono">— глубина</div>
               </div>
             </div>
@@ -888,7 +888,7 @@ function ContactForm() {
 
                 <div>
                   <label className="text-[11px] uppercase tracking-widest text-white/40 mb-2.5 block">Тип проекта</label>
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                  <div className="grid md:grid-cols-2 sm:grid-cols-4 gap-2">
                     {["Лендинг", "Digital-интерфейс", "Концепт-страница", "Визуальная система"].map((t) => (
                       <button
                         key={t}
@@ -929,7 +929,7 @@ function Footer() {
   return (
     <footer className="relative border-t border-white/5 pt-20 pb-10">
       <div className="mx-auto max-w-7xl px-5">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-10 mb-16">
+        <div className="grid md:grid-cols-2 md:grid-cols-5 gap-10 mb-16">
           <div className="col-span-2">
             <div className="mb-5">
               <div className="font-display text-[17px] font-medium tracking-[0.01em] text-white leading-none">
