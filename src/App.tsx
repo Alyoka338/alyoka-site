@@ -42,7 +42,7 @@ function Nav() {
       }`}
     >
       <div
-        className="mx-auto max-w-7xl px-5"
+        className="relative mx-auto max-w-7xl px-3 sm:px-5 min-h-[100svh]"
         }`}
       >
         <div
