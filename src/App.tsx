@@ -38,8 +38,7 @@ function Nav() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-        scrolled ? "py-3" : "py-5"
-      }`}
+className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 py-3`}      }`}
     >
       <div
         className="relative mx-auto max-w-7xl px-3 sm:px-5 min-h-[100svh]"
@@ -47,8 +46,7 @@ function Nav() {
       >
         <div
           className={`flex items-center justify-between rounded-2xl px-5 py-3 ${
-            scrolled ? "glass-strong" : ""
-          }`}
+className={`flex items-center justify-between rounded-2xl px-5 py-3 glass-strong`}          }`}
         >
           <a href="#top" className="relative flex items-center justify-center group h-16 w-16 rounded-2xl hover:bg-white/[0.03] transition-all duration-500 translate-y-1.5">
             {/* Ambient cinematic backplate glow */}
