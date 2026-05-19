@@ -121,7 +121,7 @@ function Hero() {
   }, []);
 
   return (
-    <section id="top" className="relative pt-36 pb-24 overflow-hidden">
+    <section id="top" className="relative overflow-hidden min-h-screen">
       {/* Animated orbs */}
       <div className="absolute -top-40 -right-40 h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle_at_center,rgba(139,92,255,0.45),transparent_60%)] blur-3xl orb-1" />
       <div className="absolute top-40 -left-40 h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle_at_center,rgba(77,124,255,0.45),transparent_60%)] blur-3xl orb-2" />
