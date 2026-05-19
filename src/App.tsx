@@ -853,6 +853,7 @@ function ContactForm() {
                   <div>
                     <label className="text-[11px] uppercase tracking-widest text-white/40 mb-2 block">Имя</label>
                     <input 
+                      name="Имя"
                       className="field" 
                       placeholder="Имя" 
                       value={name}
