@@ -42,8 +42,7 @@ function Nav() {
       }`}
     >
       <div
-        className={`mx-auto max-w-7xl px-5 transition-colors duration-300 ${
-          scrolled ? "scale-[0.99]" : ""
+        className="mx-auto max-w-7xl px-5"
         }`}
       >
         <div
