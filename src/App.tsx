@@ -877,6 +877,7 @@ function ContactForm() {
                 <div>
                   <label className="text-[11px] uppercase tracking-widest text-white/40 mb-2 block">Номер телефона</label>
                   <input 
+                    name="Телефон"
                     className="field" 
                     placeholder="+7 (999) 999-99-99" 
                     value={phone}
