@@ -139,8 +139,7 @@ function Hero() {
             <span className="text-white/80">Digital studio нового поколения</span>
           </div>
         </div>
-
-        <h1 className="reveal text-center font-display font-bold text-[clamp(18px,4.2vw,72px)] leading-[0.95] tracking-tight leading-tight">
+        <h1 className="reveal text-center font-display font-bold text-[clamp(18px,4.2vw,72px)] leading-[0.95] tracking-tight leading-tight min-h-[180px] md:min-h-[220px]">
           Создаём <span className="text-gradient">premium</span>
           <span className="inline-block min-h-[2em] whitespace-nowrap">
            <span className="text-gradient-blue inline-block w-[14ch] text-left">{typed}</span>
