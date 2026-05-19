@@ -140,8 +140,8 @@ function Hero() {
           </div>
         </div>
 
-        <h1 className="reveal text-center font-display font-bold text-[clamp(24px,6vw,108px)] leading-[0.95] tracking-tight leading-tight">
-          Создаём <span className="text-gradient">premium</span><br />
+        <h1 className="reveal text-center font-display font-bold text-[clamp(20px,5vw,72px)] leading-[0.95] tracking-tight leading-tight">
+          Создаём <span className="text-gradient">premium</span>
           <span className="inline-block min-h-[2em] whitespace-nowrap">
             <span className="text-gradient-blue">{typed}</span>
             <span className="cursor text-[#8b5cff]">▍</span>
