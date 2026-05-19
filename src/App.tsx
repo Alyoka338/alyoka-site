@@ -864,6 +864,7 @@ function ContactForm() {
                   <div>
                     <label className="text-[11px] uppercase tracking-widest text-white/40 mb-2 block">Telegram</label>
                     <input 
+                      name="Telegram"
                       className="field" 
                       placeholder="@username" 
                       value={telegram}
