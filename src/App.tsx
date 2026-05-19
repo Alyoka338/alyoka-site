@@ -128,7 +128,7 @@ function Hero() {
       <div className="absolute top-40 -left-40 h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle_at_center,rgba(77,124,255,0.45),transparent_60%)] blur-3xl orb-2" />
       <div className="absolute inset-0 grid-bg" />
 
-      <div className="relative mx-auto max-w-7xl px-5">
+      <div className="relative mx-auto max-w-7xl px-3 sm:px-5">
         {/* badge */}
         <div className="flex justify-center mb-8 reveal">
           <div className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs">
@@ -140,7 +140,7 @@ function Hero() {
           </div>
         </div>
 
-        <h1 className="reveal text-center font-display font-bold text-[clamp(20px,5vw,72px)] leading-[0.95] tracking-tight leading-tight">
+        <h1 className="reveal text-center font-display font-bold text-[clamp(18px,4.2vw,72px)] leading-[0.95] tracking-tight leading-tight">
           Создаём <span className="text-gradient">premium</span>
           <span className="inline-block min-h-[2em] whitespace-nowrap">
            <span className="text-gradient-blue inline-block w-[14ch] text-left">{typed}</span>
